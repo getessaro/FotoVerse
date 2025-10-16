@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoVerse - Explore o mundo em imagens</title>
+    
+     <!--Google Fonts - Poppins--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+     <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!--Header / Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🎨 FotoVerse</h1>
+                    <p class="tagline">Descubra a beleza em cada clique</p>
+                </div>
+                <nav class="nav">
+                    <a href="#inicio" class="nav-link active">Início</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+     <!--Seção Principal - Busca e Galeria--> 
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="container">
+                <h2 class="section-title">Explore o Mundo em Imagens</h2>
+                <p class="section-subtitle">Pesquise por temas e descubra fotos incríveis</p>
+                
+                 <!--Barra de Busca--> 
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Buscar por natureza, cidades, tecnologia, arte..."
+                        autocomplete="off"
+                    >
+                    <button id="searchBtn" class="search-btn">
+                        <span>🔍</span> Buscar
+                    </button>
+                </div>
+
+                 <!--Mensagem de Status--> 
+                <div id="statusMessage" class="status-message"></div>
+
+                 <!--Grid de Cards com Fotos--> 
+                <div id="photoGrid" class="photo-grid">
+                     Cards serão inseridos aqui dinamicamente via JavaScript 
+                </div>
+
+                 <!--Loading Spinner--> 
+                <div id="loadingSpinner" class="loading-spinner hidden">
+                    <div class="spinner"></div>
+                    <p>Carregando fotos...</p>
+                </div>
+            </div>
+        </section>
+
+         <!--Seção Sobre--> 
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Sobre o FotoVerse</h2>
+                <div class="about-content">
+                    <p>
+                        O <strong>FotoVerse</strong> é uma plataforma criativa dedicada a conectar você 
+                        com as imagens mais inspiradoras do mundo. Nossa missão é facilitar a descoberta 
+                        de fotografias de alta qualidade através de uma interface moderna e intuitiva.
+                    </p>
+                    <p>
+                        Seja você um designer em busca de referências, um criador de conteúdo procurando 
+                        inspiração, ou simplesmente alguém que aprecia a arte da fotografia, o FotoVerse 
+                        oferece uma experiência visual única e envolvente.
+                    </p>
+                    <div class="features">
+                        <div class="feature-card">
+                            <span class="feature-icon">🔍</span>
+                            <h3>Busca Inteligente</h3>
+                            <p>Encontre exatamente o que procura com nossa busca por temas</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🎨</span>
+                            <h3>Alta Qualidade</h3>
+                            <p>Todas as imagens são de alta resolução e profissionais</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">⚡</span>
+                            <h3>Rápido e Responsivo</h3>
+                            <p>Interface otimizada para todos os dispositivos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--Seção Contato--> 
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Conecte-se conosco nas redes sociais</p>
+                
+                <div class="contact-buttons">
+                    <a href="mailto:contato@fotoverse.com" class="contact-btn email-btn">
+                        <span>📧</span> contato@fotoverse.com
+                    </a>
+                    <a href="#" class="contact-btn social-btn instagram">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="#" class="contact-btn social-btn twitter">
+                        <span>🐦</span> Twitter
+                    </a>
+                    <a href="#" class="contact-btn social-btn facebook">
+                        <span>👍</span> Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!--Rodapé--> 
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-slogan">"Descubra a beleza em cada clique."</p>
+            <p class="footer-credits">
+                © 2025 FotoVerse. Fotos fornecidas por 
+                <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+            </p>
+        </div>
+    </footer>
+
+     JavaScript 
+    <script src="script.js"></script>
+</body>
+</html>
