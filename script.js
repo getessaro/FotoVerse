@@ -21,6 +21,29 @@ const photoGrid = document.getElementById("photoGrid")
 const loadingSpinner = document.getElementById("loadingSpinner")
 const statusMessage = document.getElementById("statusMessage")
 
+// Adiciona função para modo escuro
+const toggleButton = document.getElementById ('theme-toggle');
+
+// Verifica se o modo escuro estava ativo antes (salvo no localStorage)
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  toggleButton.textContent = '☀️';
+} 
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  // Salva a preferência do usuário 
+  if (document.body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+    toggleButton.textContent = '☀️';
+  } else {
+    localStorage.setItem('theme', 'light');
+    toggleButton.textContent = '🌙';
+  }
+});
+
+
+
 // ========================================
 // NAVEGAÇÃO SUAVE
 // ========================================

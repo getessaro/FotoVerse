@@ -1,6 +1,3 @@
-/* ========================================
-   RESET E CONFIGURAÇÕES GLOBAIS
-   ======================================== */
 
    html, body {
     scroll-behavior: smooth;
@@ -12,6 +9,211 @@
   box-sizing: border-box;
 }
 
+/* Estilização do modo escuro */
+/* Tema Claro */
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema Escuro */
+body.dark-mode {
+  background-color: #0d0d0d;
+  color: #f1f1f1;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+body.dark-mode .header {
+  background-color: #1a1a1a;
+}
+
+/* Navegação */
+.nav-link {
+  color: #111111;
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+body.dark-mode .nav-link {
+  color: #f1f1f1;
+}
+
+/* Botão de tema */
+#theme-toggle {
+  border: 1px solid #111111;
+  background: none;
+  color: #111111;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+body.dark-mode #theme-toggle {
+  border-color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+body.dark-mode #theme-toggle:hover {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+
+/* Seções principais */
+.hero-section,
+.about-section,
+.contact-section {
+  padding: 40px 0;
+}
+
+body.dark-mode .hero-section,
+body.dark-mode .about-section,
+body.dark-mode .contact-section {
+  background-color: #121212;
+}
+
+/* Cards de fotos */
+.photo-grid .card {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+body.dark-mode .photo-grid .card {
+  background-color: #1a1a1a;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 12px #00ffff;
+}
+
+/* Cards de recursos */
+.feature-card {
+  background-color: #f0f0f0;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 12px;
+}
+
+body.dark-mode .feature-card {
+  background-color: #1a1a1a;
+  border: 1px solid #ff00ff;
+  box-shadow: 0 0 12px #ff00ff;
+}
+
+/* Botões de contato */
+.contact-btn {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0066cc;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .contact-btn {
+  background-color: #3333cc;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #eeeeee;
+  padding: 20px;
+  text-align: center;
+}
+
+body.dark-mode .footer {
+  background-color: #1a1a1a;
+  color: #cccccc;
+}
+
+/* Seção de Contato - Claro */
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+/* Seção de Contato - Escuro */
+body.dark-mode .contact-section {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Botões de Contato - Base */
+.contact-btn {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botão Email */
+.email-btn {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+
+body.dark-mode .email-btn {
+  background-color: #3399ff;
+  box-shadow: 0 0 10px #3399ff;
+}
+
+/* Instagram */
+.instagram {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+body.dark-mode .instagram {
+  background-color: #ff4f87;
+  box-shadow: 0 0 10px #ff4f87;
+}
+
+/* Twitter */
+.twitter {
+  background-color: #1da1f2;
+  color: #ffffff;
+}
+
+body.dark-mode .twitter {
+  background-color: #4db8ff;
+  box-shadow: 0 0 10px #4db8ff;
+}
+
+/* Facebook */
+.facebook {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+body.dark-mode .facebook {
+  background-color: #5a7bd5;
+  box-shadow: 0 0 10px #5a7bd5;
+}
+
+/* Hover para todos os botões */
+.contact-btn:hover {
+  opacity: 0.9;
+}
+
+/* Definição das Cores Gerais */
 :root {
   /* Paleta de Cores */
   --purple-primary: #7c3aed;
